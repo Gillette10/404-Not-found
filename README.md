@@ -1,10 +1,7 @@
-404 NOT FOUND
+# 404-NOT-FOUND
 
 A solution for a challenge from https://devchallenges.io/
 
-## Demo
-
-Insert gif or link to demo
 
 ## Screenshots
 
