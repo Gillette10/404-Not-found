@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 65rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.header {
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    height: 100%;
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+    width: 400px;
+}
+
+.container .text h1 {
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: -0.035em;
+    margin-bottom: 40px;
+}
+
+.container .text p {
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.container .text .homepage {
+    width: 250px;
+    height: 70px;
+    background: #000;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.container .text .homepage a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 25px auto;
+    display: inline-block;
+}
+
+.container .text .homepage:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+    padding: 24px 0px;
+    font-family: var(--font-Montserrat);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 17px;
+    color: #bdbdbd;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .container .text {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .text h1 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+}
